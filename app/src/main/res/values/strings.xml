@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IMCApp</string>
+    <string name="index_value">Seu indice é: %1$s</string>
+    <string name="female_label">Feminino</string>
+    <string name="male_label">Masculino</string>
+    <string name="abaixo_peso">Abaixo do Peso</string>
+    <string name="peso_normal">Peso Normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidade_grau_1">Obesidade Grau I</string>
+    <string name="obesidade_grau_2">Obesidade Grau II</string>
+    <string name="obesidade_grau_3">Obesidade Grau III</string>
+
+</resources>

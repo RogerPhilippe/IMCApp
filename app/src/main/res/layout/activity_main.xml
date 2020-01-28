@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculo IMC"
+                android:gravity="center"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        style="@style/label_form"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Peso (KG)"/>
+
+                <TextView
+                        style="@style/label_form"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Altura (M)"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                <EditText
+                        android:id="@+id/editWeight"
+                        style="@style/input_form"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:inputType="numberDecimal"
+                        android:hint="Peso"/>
+
+                <EditText
+                        android:id="@+id/editHeight"
+                        style="@style/input_form"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:inputType="numberDecimal"
+                        android:hint="Altura"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Switch
+                        android:id="@+id/swGen"
+                        android:text="Sexo  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:id="@+id/genLabel"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Feminino"/>
+
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnCalc"
+                    style="@style/button"
+                    android:text="Calcular"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        <TextView
+                android:id="@+id/indexValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:text="@string/index_value"/>
+
+        <ImageView
+                android:id="@+id/indexImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/indexValue"
+                android:layout_above="@id/indexMsg"
+                android:layout_margin="24dp"
+                android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+                android:id="@+id/indexMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="12dp"
+                android:text="..."/>
+
+    </RelativeLayout>
+
+</LinearLayout>
